@@ -4,13 +4,18 @@ module.exports = function(sequelize, DataTypes) {
     devoured: {
       type: DataTypes.BOOLEAN,
       defaultValue: false
-    }
-  }, {
+      } 
+    }, {
+      timestamps: false
+    }, 
+    
+    {
     classMethods: {
       associate: function(models) {
         // future associations
       }
     }
+  
   });
   return Burger;
 };
